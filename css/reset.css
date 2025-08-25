@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+
+  -webkit-touch-callout: none;
+  /* -webkit-user-select: none; */
+  /* -khtml-user-select: none; */
+  /* -moz-user-select: none; */
+  /* -ms-user-select: none; */
+  /* user-select: none; */
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+input[type="text"],
+textarea {
+  resize: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: #008bec;
+}
+
+input[type="text"] {
+  width: 100%;
+  text-align: center;
+}
+
+textarea::placeholder {
+  color: #d8d8d8;
+  font-size: 50px;
+  font: inherit;
+}
+
+textarea::-webkit-scrollbar {
+  --w: 11px;
+  width: var(--w);
+}
+
+/* 스크롤바의 전체 배경색 */
+textarea::-webkit-scrollbar-thumb {
+  border-radius: calc(var(--w) / 2);
+  background-color: var(--scroll-color);
+  z-index: 1;
+}
+
+textarea::-webkit-scrollbar-track {
+  width: var(--w);
+  border-radius: calc(var(--w) / 2);
+  background-color: var(--scroll-bg);
+}
+
+u {
+  text-underline-position: under;
+  text-underline-offset: 0px;
+  text-decoration-thickness: 2px !important;
+  text-decoration-color: #000;
+}
+
+.contenteditable {
+  color: #008bec;
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+a:focus,
+a:active,
+a:link{
+  text-decoration: none;
+  color:inherit;
+  font-size: inherit;
+}

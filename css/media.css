@@ -1,0 +1,252 @@
+@media (150px <= width <= 1318px){
+    section{
+        min-width: 150px;
+    }
+    .main_img {
+        top: 30vw;
+    }
+    h1 {
+        letter-spacing: 0px;
+        padding-top: 10vw;
+        margin-right: var(--edge);
+        font-size: clamp(32.16px, 8.04vw, 106px);
+        line-height: clamp(38.84px, 9.71vw, 128px);
+    }
+    h2{
+        margin-left: var(--edge);
+    }
+    h1 + p{
+        margin-right: var(--edge);
+    }
+    h1 + p + ul{
+        padding-bottom: 28vw;
+    }
+    .f30 {
+        font-size: clamp(9.12px, 2.28vw, 30px);
+    }
+    .f28 {
+        font-size: clamp(8.48px, 2.12vw, 28px);
+    }
+    .f27 {
+        font-size: clamp(8.2px, 2.05vw, 27px);
+    }
+    .f24{
+        font-size: clamp(7.28px, 1.82vw, 24px);
+    }
+    .f20{
+        font-size: clamp(6.08px, 1.52vw, 20px);
+    }
+    .f14{
+        font-size: clamp(4.24px, 1.06vw, 14px);
+    }
+
+    .grid {
+        gap: clamp(10px, 2.50vw, 33px) clamp(8.8px, 2.20vw, 29px);
+    }
+
+    .play_btn_wrap {
+        --h: 116px;
+        width: (100% - calc(var(--edge) * 2));
+        margin-left: var(--edge);
+    }
+    .inquiry_content{
+        grid-template-columns: 1fr;
+    }
+    .inquiry_content h2 + :is(ul,p) {
+        width: (100% - calc(var(--edge) * 2));
+        margin-left: var(--edge);
+    }
+
+    .inquiry_content li {
+        white-space: normal;
+    }
+}
+
+@media (600px <= width <= 1318px){
+    .grid {
+        width: calc( 100% - calc(var(--edge) * 2 ) );
+        margin-left: var(--edge);
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .info_grid .apply {
+        grid-column: span 2;
+    }
+
+    .info_grid h3{
+        font-size: 24px;
+    }
+    .info_grid p{
+        font-size: 18px;
+        line-height: 36px;
+    }
+    .info_grid :not(.apply) h3 {
+        margin-top: 12px;
+    }
+    .info_grid .prize ul > li:after{
+        --w:6px;
+    }
+    .info_grid .eligibility ul > li,
+    .info_grid .prize ul li,
+    .info_grid .schedule dl{font-size: 18px;}
+    
+    .trophy{
+        right: clamp(3.04px, 0.76vw, 10px);
+        width: clamp(91.04px, 22.76vw, 300px);
+        height: clamp(134.16px, 33.54vw, 442px);
+    }
+
+    .features h2 + p{
+        margin-inline: var(--edge);
+    }
+
+    h2 + p {
+        font-size: 26px;
+        margin-top: 16px;
+    }
+    .inquiry_content h2 + :is(ul,p) {
+        font-size: 26px !important;
+    }
+
+    .precautions a,
+    .precautions ul{
+        font-size: 26px;
+    }
+    .precautions ul {
+        margin: 40px 0 0 50px;
+    }
+
+    .features_grid {
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .features_grid > div > div:nth-child(1){
+        font-size: 24px;
+    }
+    .features_grid > div > div:nth-child(3){
+        font-size: 22px;
+    }
+
+    .features_grid i.br{
+        display: inline-block;
+    }
+
+    .play_btn_wrap{
+        --h: 92px;
+    }
+    .participate_btn p,
+    .play_btn_wrap p{
+        font-size: 36px;
+    }
+    .participate_btn button,
+    .play_btn_wrap button{
+        --margin: 15px;
+    }
+    .play_btn_wrap img{
+        width: 19px;
+        margin-right: -2px;
+    }
+
+    .participate_btn{
+        --h:130px;
+        width: calc( 100% - calc(var(--edge) * 2 ) );
+        margin-left: var(--edge);
+    }
+}
+@media (150px <= width <= 599px){
+    .grid {
+        width: calc( 100% - calc(var(--edge) * 2 ) );
+        margin-left: var(--edge);
+        grid-template-columns: 1fr !important;
+    }
+    .info_grid > div {
+        padding: 18px;
+        grid-template-columns: 60px auto;
+    }
+    .info_grid .apply {
+        grid-column: span 1;
+    }
+    .info_grid .apply p {
+        grid-column: span 2;
+    }
+    .info_grid :not(.apply) h3 {
+        margin-top: 12px;
+    }
+    .info_grid h3{
+        font-size: 20px;
+    }
+    .info_grid .prize ul > li:after{
+        --w:4px;
+    }
+    .info_grid .eligibility ul > li,
+    .info_grid .prize ul li,
+    .info_grid .schedule dl{font-size: 16px;}
+    .info_grid p{
+        font-size: 16px;
+        line-height: 34px;
+    }
+
+    .grid i.br {
+        display: inline-block;
+    }
+    .trophy{
+        right: clamp(3.04px, 0.76vw, 10px);
+        width: clamp(91.04px, 22.76vw, 300px);
+        height: clamp(134.16px, 33.54vw, 442px);
+    }
+
+    h2 + p {
+        font-size: 16px;
+        margin-top: 14px;
+    }
+    .inquiry_content h2 + :is(ul,p) {
+        font-size: 16px !important;
+    }
+
+    .precautions a,
+    .precautions ul{
+        font-size: 18px;
+    }
+    .precautions ul {
+        margin: 30px 0 0 40px;
+    }
+
+    .features_grid > div{
+        display: grid;
+        grid-template-rows: 51px auto;
+        row-gap: 10px;
+    }
+
+    .features_grid > div > div:nth-child(1){
+        font-size: 20px;
+    }
+    .features_grid > div > div:nth-child(3){
+        font-size: 18px;
+    }
+    .features_grid {
+        grid-template-rows: repeat(8, 1fr);
+    }
+    
+    .play_btn_wrap{
+        --h: 70px;
+    }
+    .participate_btn p,
+    .play_btn_wrap p{
+        font-size: 28px;
+    }
+    .participate_btn button,
+    .play_btn_wrap button{
+        --margin: 10px;
+    }
+    .play_btn_wrap img{
+        width: 14px;
+        margin-right: -1px;
+    }
+
+    .participate_btn{
+        --h:100px;
+        width: calc( 100% - calc(var(--edge) * 2 ) );
+        margin-left: var(--edge);
+    }
+}
+
+

@@ -1,0 +1,26 @@
+@media (pointer:fine) {
+    .contest_head:before{
+        animation: top_down 12s linear 0.3s infinite;
+    }
+    .contest_head:after{
+        animation: top_down 11s linear 0.6s infinite;
+    }
+}
+
+@media (pointer:coarse) and (150px <= width <= 1318px) {
+    section{
+        min-height: clamp(273.12px, 68.28vw, 900px);
+    }
+}
+
+@keyframes top_down{
+    0%,50%,100%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(10px);
+    }
+    75%{
+        transform: translateY(-10px);
+    }
+}
