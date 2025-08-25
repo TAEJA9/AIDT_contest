@@ -287,18 +287,18 @@
 
   /* 값: 날짜/대상/금액 */
   .contest_head h1 + p + ul > li > h3 + p {
-    font-size: 11px;   /* 키웠던 글씨 크기 */
+    font-size: 11px; 
   }
 }
 
 /* === 초소형(<=360px) 미세 보정 수정 === */
 @media (max-width: 360px) {
   .contest_head h1 + p + ul > li > h3 {
-    min-width: 68px;   /* ★★★ 초소형 화면에서도 너비 조정 ★★★ */
-    font-size: 11px;   /* 키웠던 글씨 크기 */
+    min-width: 68px;  
+    font-size: 11px;   
   }
   .contest_head h1 + p + ul > li > h3 + p {
-    font-size: 11px;   /* 키웠던 글씨 크기 */
+    font-size: 11px;   
   }
 }
 
@@ -308,3 +308,4 @@
     padding-bottom: 50px; /* ★★★ 기존 28vw의 큰 여백을 50px로 줄임 ★★★ */
   }
 }
+
