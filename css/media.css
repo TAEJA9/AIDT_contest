@@ -21,12 +21,24 @@
     h1 + p + ul{
         padding-bottom: 28vw;
     }
-    .f30 { font-size: clamp(9.12px, 2.28vw, 30px); }
-    .f28 { font-size: clamp(8.48px, 2.12vw, 28px); }
-    .f27 { font-size: clamp(8.2px, 2.05vw, 27px); }
-    .f24 { font-size: clamp(7.28px, 1.82vw, 24px); }
-    .f20 { font-size: clamp(6.08px, 1.52vw, 20px); }
-    .f14 { font-size: clamp(4.24px, 1.06vw, 14px); }
+    .f30 {
+        font-size: clamp(9.12px, 2.28vw, 30px);
+    }
+    .f28 {
+        font-size: clamp(8.48px, 2.12vw, 28px);
+    }
+    .f27 {
+        font-size: clamp(8.2px, 2.05vw, 27px);
+    }
+    .f24{
+        font-size: clamp(7.28px, 1.82vw, 24px);
+    }
+    .f20{
+        font-size: clamp(6.08px, 1.52vw, 20px);
+    }
+    .f14{
+        font-size: clamp(4.24px, 1.06vw, 14px);
+    }
 
     .grid {
         gap: clamp(10px, 2.50vw, 33px) clamp(8.8px, 2.20vw, 29px);
@@ -56,12 +68,23 @@
         margin-left: var(--edge);
         grid-template-columns: repeat(2, 1fr) !important;
     }
-    .info_grid .apply { grid-column: span 2; }
+    .info_grid .apply {
+        grid-column: span 2;
+    }
 
-    .info_grid h3{ font-size: 24px; }
-    .info_grid p{  font-size: 18px; line-height: 36px; }
-    .info_grid :not(.apply) h3 { margin-top: 12px; }
-    .info_grid .prize ul > li:after{ --w:6px; }
+    .info_grid h3{
+        font-size: 24px;
+    }
+    .info_grid p{
+        font-size: 18px;
+        line-height: 36px;
+    }
+    .info_grid :not(.apply) h3 {
+        margin-top: 12px;
+    }
+    .info_grid .prize ul > li:after{
+        --w:6px;
+    }
     .info_grid .eligibility ul > li,
     .info_grid .prize ul li,
     .info_grid .schedule dl{font-size: 18px;}
@@ -72,28 +95,56 @@
         height: clamp(134.16px, 33.54vw, 442px);
     }
 
-    .features h2 + p{ margin-inline: var(--edge); }
+    .features h2 + p{
+        margin-inline: var(--edge);
+    }
 
-    h2 + p { font-size: 26px; margin-top: 16px; }
-    .inquiry_content h2 + :is(ul,p) { font-size: 26px !important; }
+    h2 + p {
+        font-size: 26px;
+        margin-top: 16px;
+    }
+    .inquiry_content h2 + :is(ul,p) {
+        font-size: 26px !important;
+    }
 
     .precautions a,
-    .precautions ul{ font-size: 26px; }
-    .precautions ul { margin: 40px 0 0 50px; }
+    .precautions ul{
+        font-size: 26px;
+    }
+    .precautions ul {
+        margin: 40px 0 0 50px;
+    }
 
-    .features_grid { grid-template-rows: repeat(4, 1fr); }
+    .features_grid {
+        grid-template-rows: repeat(4, 1fr);
+    }
 
-    .features_grid > div > div:nth-child(1){ font-size: 24px; }
-    .features_grid > div > div:nth-child(3){ font-size: 22px; }
+    .features_grid > div > div:nth-child(1){
+        font-size: 24px;
+    }
+    .features_grid > div > div:nth-child(3){
+        font-size: 22px;
+    }
 
-    .features_grid i.br{ display: inline-block; }
+    .features_grid i.br{
+        display: inline-block;
+    }
 
-    .play_btn_wrap{ --h: 92px; }
+    .play_btn_wrap{
+        --h: 92px;
+    }
     .participate_btn p,
-    .play_btn_wrap p{ font-size: 36px; }
+    .play_btn_wrap p{
+        font-size: 36px;
+    }
     .participate_btn button,
-    .play_btn_wrap button{ --margin: 15px; }
-    .play_btn_wrap img{ width: 19px; margin-right: -2px; }
+    .play_btn_wrap button{
+        --margin: 15px;
+    }
+    .play_btn_wrap img{
+        width: 19px;
+        margin-right: -2px;
+    }
 
     .participate_btn{
         --h:130px;
@@ -101,7 +152,6 @@
         margin-left: var(--edge);
     }
 }
-
 @media (150px <= width <= 599px){
     .grid {
         width: calc( 100% - calc(var(--edge) * 2 ) );
@@ -112,45 +162,85 @@
         padding: 18px;
         grid-template-columns: 60px auto;
     }
-    .info_grid .apply { grid-column: span 1; }
-    .info_grid .apply p { grid-column: span 2; }
-    .info_grid :not(.apply) h3 { margin-top: 12px; }
-    .info_grid h3{ font-size: 20px; }
-    .info_grid .prize ul > li:after{ --w:4px; }
+    .info_grid .apply {
+        grid-column: span 1;
+    }
+    .info_grid .apply p {
+        grid-column: span 2;
+    }
+    .info_grid :not(.apply) h3 {
+        margin-top: 12px;
+    }
+    .info_grid h3{
+        font-size: 20px;
+    }
+    .info_grid .prize ul > li:after{
+        --w:4px;
+    }
     .info_grid .eligibility ul > li,
     .info_grid .prize ul li,
     .info_grid .schedule dl{font-size: 16px;}
-    .info_grid p{ font-size: 16px; line-height: 34px; }
+    .info_grid p{
+        font-size: 16px;
+        line-height: 34px;
+    }
 
-    .grid i.br { display: inline-block; }
+    .grid i.br {
+        display: inline-block;
+    }
     .trophy{
         right: clamp(3.04px, 0.76vw, 10px);
         width: clamp(91.04px, 22.76vw, 300px);
         height: clamp(134.16px, 33.54vw, 442px);
     }
 
-    h2 + p { font-size: 16px; margin-top: 14px; }
-    .inquiry_content h2 + :is(ul,p) { font-size: 16px !important; }
+    h2 + p {
+        font-size: 16px;
+        margin-top: 14px;
+    }
+    .inquiry_content h2 + :is(ul,p) {
+        font-size: 16px !important;
+    }
 
     .precautions a,
-    .precautions ul{ font-size: 18px; }
-    .precautions ul { margin: 30px 0 0 40px; }
+    .precautions ul{
+        font-size: 18px;
+    }
+    .precautions ul {
+        margin: 30px 0 0 40px;
+    }
 
     .features_grid > div{
         display: grid;
         grid-template-rows: 51px auto;
         row-gap: 10px;
     }
-    .features_grid > div > div:nth-child(1){ font-size: 20px; }
-    .features_grid > div > div:nth-child(3){ font-size: 18px; }
-    .features_grid { grid-template-rows: repeat(8, 1fr); }
+
+    .features_grid > div > div:nth-child(1){
+        font-size: 20px;
+    }
+    .features_grid > div > div:nth-child(3){
+        font-size: 18px;
+    }
+    .features_grid {
+        grid-template-rows: repeat(8, 1fr);
+    }
     
-    .play_btn_wrap{ --h: 70px; }
+    .play_btn_wrap{
+        --h: 70px;
+    }
     .participate_btn p,
-    .play_btn_wrap p{ font-size: 28px; }
+    .play_btn_wrap p{
+        font-size: 28px;
+    }
     .participate_btn button,
-    .play_btn_wrap button{ --margin: 10px; }
-    .play_btn_wrap img{ width: 14px; margin-right: -1px; }
+    .play_btn_wrap button{
+        --margin: 10px;
+    }
+    .play_btn_wrap img{
+        width: 14px;
+        margin-right: -1px;
+    }
 
     .participate_btn{
         --h:100px;
@@ -159,74 +249,62 @@
     }
 }
 
-/* === 모바일(<=768px): 헤더 정보(공모 기간/참가 자격/총 상금) 정리 === */
+/* === 모바일(<=768px) 헤더 정보 글씨 크기 및 레이아웃 수정 === */
+
 @media (max-width: 768px) {
-
-  /* 헤더 컨테이너: 오른쪽 안전 여백 */
-  .contest_head {
-    overflow: visible;
-    padding-right: 12px;
-  }
-
-  /* 제목 바로 아래 UL: 블록은 오른쪽에, 내부는 왼쪽 정렬 */
-  .contest_head h1 + p + ul {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    width: max-content;
-    margin: 10px 16px 0 auto;  /* 오른쪽 붙임 */
-    text-align: left;
-  }
-
-  /* 각 항목(라벨 | 값) 한 줄 배치 */
-  .contest_head h1 + p + ul > li {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    line-height: 1.35;   /* 줄간격 안정 */
-  }
-
   /* 라벨: 공모 기간 / 참가 자격 / 총 상금 */
   .contest_head h1 + p + ul > li > h3 {
-    /* 기존 세로쓰기/회전 해제 */
-    writing-mode: horizontal-tb;
+    writing-mode: horizontal-tb; 글자 가로 방향 유지
     transform: none;
     margin: 0;
-    min-width: 64px;     /* 라벨 폭 맞춰 정렬선 고정(60~80px 사이 취향 조절) */
-    font-size: 12px;    
+    min-width: 50px;     /* ★★★ 라벨 칸의 최소 너비를 늘려서 줄바꿈 방지! ★★★ */
+    font-size: 11px;     /* 키웠던 글씨 크기 */
     font-weight: 600;
-    color: #FFE08A;
+    color: #FFf;
+    display: flex;       /* 정렬을 위해 추가 */
+    align-items: center; /* 정렬을 위해 추가 */
+    border-radius: 6px;
+    justify-content: center;
+    
   }
+
+  .contest_head .main_img{
+    position: absolute;
+    top: 8vw;
+  }
+
+  .contest_head h1 + p + ul {
+    gap: 6px;
+    
+  }
+  @media (max-width: 768px) {
+  /* 라벨과 텍스트 전체를 감싸는 ul 태그의 위치 조정 */
+  .contest_head h1 + p + ul {
+    /* ▼▼▼ margin의 두 번째 값(오른쪽 여백)을 수정 ▼▼▼ */
+    margin: 10px 24px 0 auto; /* 기존 16px에서 24px로 늘려 왼쪽으로 당김 */
+  }
+
 
   /* 값: 날짜/대상/금액 */
   .contest_head h1 + p + ul > li > h3 + p {
-    margin: 0;
-    font-size: 12px;   
-    font-weight: 700;
-    line-height: 1.35;
-    color: #fff;
+    font-size: 11px;   /* 키웠던 글씨 크기 */
   }
 }
 
-/* 초소형(아이폰 SE 등) 미세 보정 */
+/* === 초소형(<=360px) 미세 보정 수정 === */
 @media (max-width: 360px) {
-  .contest_head h1 + p + ul { gap: 6px; margin-right: 12px; }
-  .contest_head h1 + p + ul > li > h3     { font-size: 11px; }
-  .contest_head h1 + p + ul > li > h3 + p { font-size: 12px; }
-}
-
-/* 모바일에서 헤더 아트워크 위치 고정 */
-@media (max-width: 768px){
-  .contest_head{ position: relative; }         /* 기준 박스 명확화 */
-  .main_img{
-    position: absolute;                        /* 흐름과 분리 → 배지 높이에 영향 안 받음 */
-    top: 8vw;                                  /* ↓ 너무 내려갔던 값(예: 18~30vw)에서 확 올림 */
-    left: clamp(8px, 4vw, 28px);               /* 좌측 살짝 여백 */
-    transform: scale(0.92);                    /* 화면 작을 때만 살짝 축소 */
+  .contest_head h1 + p + ul > li > h3 {
+    min-width: 68px;   /* ★★★ 초소형 화면에서도 너비 조정 ★★★ */
+    font-size: 11px;   /* 키웠던 글씨 크기 */
+  }
+  .contest_head h1 + p + ul > li > h3 + p {
+    font-size: 11px;   /* 키웠던 글씨 크기 */
   }
 }
 
-/* 초소형(아이폰 SE 등) 미세 보정 */
-@media (max-width: 360px){
-  .main_img{ top: 6vw; transform: scale(0.9); }
+@media (max-width: 768px) {
+  /* 헤더(h1) 아래 ul 태그의 불필요한 아래쪽 여백 수정 */
+  .contest_head h1 + p + ul {
+    padding-bottom: 50px; /* ★★★ 기존 28vw의 큰 여백을 50px로 줄임 ★★★ */
+  }
 }
