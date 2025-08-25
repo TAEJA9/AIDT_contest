@@ -259,7 +259,7 @@
     margin: 0;
     min-width: 50px;     /* ★★★ 라벨 칸의 최소 너비를 늘려서 줄바꿈 방지! ★★★ */
     font-size: 11px;     /* 키웠던 글씨 크기 */
-    font-weight: 600;
+    font-weight: 400;
     color: #FFf;
     display: flex;       /* 정렬을 위해 추가 */
     align-items: center; /* 정렬을 위해 추가 */
@@ -308,4 +308,5 @@
     padding-bottom: 50px; /* ★★★ 기존 28vw의 큰 여백을 50px로 줄임 ★★★ */
   }
 }
+
 
