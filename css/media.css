@@ -19,7 +19,7 @@
         margin-right: var(--edge);
     }
     h1 + p + ul{
-        padding-bottom: 28vw;
+        padding-bottom: 20vw;
     }
     .f30 {
         font-size: clamp(9.12px, 2.28vw, 30px);
@@ -269,5 +269,6 @@
         margin-top: 10px;
     }
 }
+
 
 
