@@ -12,8 +12,7 @@
 
     --inner:1318px;
     --outer:100%;
-    --edge:1vw;
-    --tt:rgba(255,0,0,0.5);
+    --edge:3vw;
 }
 
 html,body{
@@ -61,6 +60,8 @@ section > div{
     background: var(--c1-bg);
     min-height: clamp(237.92px, 59.48vw, 784px);
 }
+
+
 .contest_info{
     background:url(../img/contest_info_bg_1.png) left bottom/722px no-repeat, url(../img/contest_info_bg_2.png) right bottom/972px no-repeat;
     background-color: var(--c2-bg);
@@ -146,7 +147,14 @@ h1{
     line-height: 128px;
     color:#fff;
 }
-h1 > span:nth-child(1){ color:#baea68; }
+h1 > span:first-of-type{ color:#baea68; }
+
+h1 sup{
+  font-size: 0.5em;
+  vertical-align: super;
+  margin-right: 4px;
+  letter-spacing: 0.01em;
+}
 
 .highlight{
     color: #2e2a4e;

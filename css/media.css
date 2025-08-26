@@ -60,6 +60,9 @@
     .inquiry_content li {
         white-space: normal;
     }
+    h2 + p{
+        margin-inline: var(--edge);
+    }
 }
 
 @media (600px <= width <= 1318px){
@@ -153,6 +156,9 @@
     }
 }
 @media (150px <= width <= 599px){
+    .main_img{
+        top: 25vw;
+    }
     .grid {
         width: calc( 100% - calc(var(--edge) * 2 ) );
         margin-left: var(--edge);
@@ -247,66 +253,21 @@
         width: calc( 100% - calc(var(--edge) * 2 ) );
         margin-left: var(--edge);
     }
-}
-
-/* === 모바일(<=768px) 헤더 정보 글씨 크기 및 레이아웃 수정 === */
-
-@media (max-width: 768px) {
-  /* 라벨: 공모 기간 / 참가 자격 / 총 상금 */
-  .contest_head h1 + p + ul > li > h3 {
-    writing-mode: horizontal-tb; 글자 가로 방향 유지
-    transform: none;
-    margin: 0;
-    min-width: 50px;     /* ★★★ 라벨 칸의 최소 너비를 늘려서 줄바꿈 방지! ★★★ */
-    font-size: 11px;     /* 키웠던 글씨 크기 */
-    font-weight: 400;
-    color: #FFf;
-    display: flex;       /* 정렬을 위해 추가 */
-    align-items: center; /* 정렬을 위해 추가 */
-    border-radius: 6px;
-    justify-content: center;
-    
-  }
-
-  .contest_head .main_img{
-    position: absolute;
-    top: 8vw;
-  }
-
-  .contest_head h1 + p + ul {
-    gap: 6px;
-    
-  }
-  @media (max-width: 768px) {
-  /* 라벨과 텍스트 전체를 감싸는 ul 태그의 위치 조정 */
-  .contest_head h1 + p + ul {
-    /* ▼▼▼ margin의 두 번째 값(오른쪽 여백)을 수정 ▼▼▼ */
-    margin: 10px 24px 0 auto; /* 기존 16px에서 24px로 늘려 왼쪽으로 당김 */
-  }
-
-
-  /* 값: 날짜/대상/금액 */
-  .contest_head h1 + p + ul > li > h3 + p {
-    font-size: 11px; 
-  }
-}
-
-/* === 초소형(<=360px) 미세 보정 수정 === */
-@media (max-width: 360px) {
-  .contest_head h1 + p + ul > li > h3 {
-    min-width: 68px;  
-    font-size: 11px;   
-  }
-  .contest_head h1 + p + ul > li > h3 + p {
-    font-size: 11px;   
-  }
-}
-
-@media (max-width: 768px) {
-  /* 헤더(h1) 아래 ul 태그의 불필요한 아래쪽 여백 수정 */
-  .contest_head h1 + p + ul {
-    padding-bottom: 50px; /* ★★★ 기존 28vw의 큰 여백을 50px로 줄임 ★★★ */
-  }
+    h1 + p + ul{
+        --w:316px;
+    }
+    h1 + p + ul > li > h3 {
+        font-size: 16px !important;
+        width: max-content;
+        min-width: 70px;
+        padding:2px 4px;
+    }
+    h1 + p + ul > li > h3 + p {
+        font-size: 18px !important;
+    }
+    h1 + p + ul > li + li{
+        margin-top: 10px;
+    }
 }
 
 
