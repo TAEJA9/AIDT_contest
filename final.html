@@ -202,39 +202,30 @@
     <!-- Main Container -->
     <div class="min-h-screen">
         <!-- Header Section -->
-        <div class="ceremony-header rounded-b-3xl p-6 slide-up relative overflow-hidden bg-gradient-to-br from-purple-600 via-blue-600 to-indigo-700">
+        <div class="ceremony-header rounded-b-3xl p-4 md:p-6 slide-up relative overflow-hidden bg-gradient-to-br from-purple-600 via-blue-600 to-indigo-700">
             <!-- Enhanced Background Effects -->
             <div class="absolute inset-0 bg-gradient-to-br from-yellow-400/20 via-transparent to-purple-500/20 pointer-events-none"></div>
             <div class="absolute top-0 left-0 w-full h-full">
-                <div class="absolute top-10 left-10 w-20 h-20 bg-yellow-300/30 rounded-full blur-xl animate-pulse"></div>
-                <div class="absolute top-20 right-20 w-16 h-16 bg-purple-400/30 rounded-full blur-lg animate-pulse" style="animation-delay: 1s;"></div>
-                <div class="absolute bottom-10 left-1/4 w-12 h-12 bg-blue-300/30 rounded-full blur-lg animate-pulse" style="animation-delay: 2s;"></div>
+                <div class="absolute top-5 md:top-10 left-5 md:left-10 w-10 md:w-20 h-10 md:h-20 bg-yellow-300/30 rounded-full blur-xl animate-pulse"></div>
+                <div class="absolute top-10 md:top-20 right-5 md:right-20 w-8 md:w-16 h-8 md:h-16 bg-purple-400/30 rounded-full blur-lg animate-pulse" style="animation-delay: 1s;"></div>
+                <div class="absolute bottom-5 md:bottom-10 left-1/4 w-6 md:w-12 h-6 md:h-12 bg-blue-300/30 rounded-full blur-lg animate-pulse" style="animation-delay: 2s;"></div>
             </div>
             
-            <div class="flex items-center justify-between max-w-7xl mx-auto relative z-10">
-                <!-- Left AI Artwork -->
-                <div class="hidden lg:block flex-shrink-0 -ml-8">
-                    <img src="https://raw.githubusercontent.com/TAEJA9/AIDT_lecture/2cd82777615554f24243f29a8f64dc4bb24da5a0/%EB%A9%88%EB%A8%B8.png" 
-                         alt="AI Digital Textbook Artwork" 
-                         class="w-64 h-64 object-contain opacity-90 hover:opacity-100 transition-all duration-700 hover:scale-110 animate-pulse"
-                         style="animation: float 3s ease-in-out infinite;"
-                         onerror="this.style.display='none';">
-                </div>
-                
-                <!-- Right Content -->
-                <div class="text-right flex-1 pr-0 ml-auto max-w-2xl">
-                    <!-- Trophy with enhanced animation -->
-                    <div class="trophy-bounce text-9xl mb-6 filter drop-shadow-2xl">🏆</div>
+            <div class="max-w-7xl mx-auto relative z-10">
+                <!-- Mobile Layout -->
+                <div class="block lg:hidden text-center">
+                    <!-- Trophy -->
+                    <div class="trophy-bounce text-6xl md:text-8xl mb-4 filter drop-shadow-2xl">🏆</div>
                     
-                    <!-- Main Title with glow effect -->
+                    <!-- Main Title -->
                     <div class="relative mb-6">
-                        <h1 class="text-2xl lg:text-3xl font-bold mb-4 whitespace-nowrap">
+                        <h1 class="text-sm md:text-lg font-bold mb-3 px-2">
                             <span class="bg-gradient-to-r from-yellow-300 via-orange-300 to-pink-300 text-transparent bg-clip-text drop-shadow-lg">
                                 (구) AI 디지털교과서가 새 이름을 찾습니다.
                             </span>
                             <div class="w-full h-1 bg-gradient-to-r from-transparent via-yellow-400 to-transparent rounded-full mt-2"></div>
                         </h1>
-                        <h2 class="text-4xl lg:text-5xl font-black mb-2 whitespace-nowrap">
+                        <h2 class="text-xl md:text-3xl font-black mb-2 px-2">
                             <span class="bg-gradient-to-r from-yellow-200 via-yellow-100 to-white text-transparent bg-clip-text drop-shadow-2xl">
                                 공모전 결과를 발표합니다!
                             </span>
@@ -243,31 +234,86 @@
                     </div>
                     
                     <!-- Decorative line -->
-                    <div class="flex items-center justify-end space-x-4 mb-8">
-                        <div class="w-16 h-1 bg-gradient-to-r from-transparent via-yellow-400 to-transparent rounded-full"></div>
-                        <div class="text-2xl">✨</div>
-                        <div class="w-16 h-1 bg-gradient-to-r from-transparent via-yellow-400 to-transparent rounded-full"></div>
+                    <div class="flex items-center justify-center space-x-4 mb-6">
+                        <div class="w-8 md:w-16 h-1 bg-gradient-to-r from-transparent via-yellow-400 to-transparent rounded-full"></div>
+                        <div class="text-xl md:text-2xl">✨</div>
+                        <div class="w-8 md:w-16 h-1 bg-gradient-to-r from-transparent via-yellow-400 to-transparent rounded-full"></div>
                     </div>
                     
-                    <!-- Statistics with enhanced presentation -->
-                    <div class="w-full">
-                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-2xl">
-                            <p class="text-white text-lg lg:text-xl leading-relaxed whitespace-nowrap">
-                                총 <span class="inline-block bg-gradient-to-r from-yellow-400 to-orange-400 text-transparent bg-clip-text font-black text-xl lg:text-2xl px-2 py-1 rounded-lg">1,247명</span>이 
-                                <span class="inline-block bg-gradient-to-r from-yellow-400 to-orange-400 text-transparent bg-clip-text font-black text-xl lg:text-2xl px-2 py-1 rounded-lg">2,891개</span>의 창의적인 이름을 제안해 주셨습니다.
+                    <!-- Statistics -->
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 md:p-6 border border-white/20 shadow-2xl mx-2">
+                        <p class="text-white text-sm md:text-lg leading-relaxed">
+                            총 <span class="inline-block bg-gradient-to-r from-yellow-400 to-orange-400 text-transparent bg-clip-text font-black text-base md:text-xl px-1 py-1 rounded-lg">1,247명</span>이<br class="md:hidden"> 
+                            <span class="inline-block bg-gradient-to-r from-yellow-400 to-orange-400 text-transparent bg-clip-text font-black text-base md:text-xl px-1 py-1 rounded-lg">2,891개</span>의 창의적인 이름을<br class="md:hidden"> 제안해 주셨습니다.
+                        </p>
+                        <div class="mt-4 text-center">
+                            <p class="text-yellow-200 text-sm md:text-lg font-semibold">
+                                참여해주신 모든 분들께<br class="md:hidden"> 진심으로 감사드립니다!
                             </p>
-                            <div class="mt-6 flex items-center justify-end space-x-2">
-                                <p class="text-yellow-200 text-lg lg:text-xl font-semibold whitespace-nowrap">
-                                    참여해주신 모든 분들께 진심으로 감사드립니다!
-                                </p>
-                                <span class="text-3xl">🎉</span>
-                            </div>
+                            <span class="text-2xl md:text-3xl">🎉</span>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Right Balance (invisible spacer) -->
-                <div class="hidden lg:block flex-shrink-0 w-56"></div>
+
+                <!-- Desktop Layout -->
+                <div class="hidden lg:flex items-center justify-between">
+                    <!-- Left AI Artwork -->
+                    <div class="flex-shrink-0 -ml-8">
+                        <img src="https://raw.githubusercontent.com/TAEJA9/AIDT_lecture/2cd82777615554f24243f29a8f64dc4bb24da5a0/%EB%A9%88%EB%A8%B8.png" 
+                             alt="AI Digital Textbook Artwork" 
+                             class="w-64 h-64 object-contain opacity-90 hover:opacity-100 transition-all duration-700 hover:scale-110 animate-pulse"
+                             style="animation: float 3s ease-in-out infinite;"
+                             onerror="this.style.display='none';">
+                    </div>
+                    
+                    <!-- Right Content -->
+                    <div class="text-right flex-1 pr-0 ml-auto max-w-2xl">
+                        <!-- Trophy with enhanced animation -->
+                        <div class="trophy-bounce text-9xl mb-6 filter drop-shadow-2xl">🏆</div>
+                        
+                        <!-- Main Title with glow effect -->
+                        <div class="relative mb-6">
+                            <h1 class="text-2xl lg:text-3xl font-bold mb-4 whitespace-nowrap">
+                                <span class="bg-gradient-to-r from-yellow-300 via-orange-300 to-pink-300 text-transparent bg-clip-text drop-shadow-lg">
+                                    (구) AI 디지털교과서가 새 이름을 찾습니다.
+                                </span>
+                                <div class="w-full h-1 bg-gradient-to-r from-transparent via-yellow-400 to-transparent rounded-full mt-2"></div>
+                            </h1>
+                            <h2 class="text-4xl lg:text-5xl font-black mb-2 whitespace-nowrap">
+                                <span class="bg-gradient-to-r from-yellow-200 via-yellow-100 to-white text-transparent bg-clip-text drop-shadow-2xl">
+                                    공모전 결과를 발표합니다!
+                                </span>
+                                <div class="w-full h-2 bg-gradient-to-r from-transparent via-yellow-400 via-orange-400 to-transparent rounded-full mt-3"></div>
+                            </h2>
+                        </div>
+                        
+                        <!-- Decorative line -->
+                        <div class="flex items-center justify-end space-x-4 mb-8">
+                            <div class="w-16 h-1 bg-gradient-to-r from-transparent via-yellow-400 to-transparent rounded-full"></div>
+                            <div class="text-2xl">✨</div>
+                            <div class="w-16 h-1 bg-gradient-to-r from-transparent via-yellow-400 to-transparent rounded-full"></div>
+                        </div>
+                        
+                        <!-- Statistics with enhanced presentation -->
+                        <div class="w-full">
+                            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-2xl">
+                                <p class="text-white text-lg lg:text-xl leading-relaxed whitespace-nowrap">
+                                    총 <span class="inline-block bg-gradient-to-r from-yellow-400 to-orange-400 text-transparent bg-clip-text font-black text-xl lg:text-2xl px-2 py-1 rounded-lg">1,247명</span>이 
+                                    <span class="inline-block bg-gradient-to-r from-yellow-400 to-orange-400 text-transparent bg-clip-text font-black text-xl lg:text-2xl px-2 py-1 rounded-lg">2,891개</span>의 창의적인 이름을 제안해 주셨습니다.
+                                </p>
+                                <div class="mt-6 flex items-center justify-end space-x-2">
+                                    <p class="text-yellow-200 text-lg lg:text-xl font-semibold whitespace-nowrap">
+                                        참여해주신 모든 분들께 진심으로 감사드립니다!
+                                    </p>
+                                    <span class="text-3xl">🎉</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Balance (invisible spacer) -->
+                    <div class="flex-shrink-0 w-56"></div>
+                </div>
             </div>
         </div>
 
@@ -276,22 +322,22 @@
             <!-- Winner -->
             <div class="mb-16 slide-up">
                 <div class="text-center mb-8">
-                    <h3 class="text-4xl font-black text-gray-800 mb-2">🥇 대상</h3>
-                    <div class="w-24 h-1 bg-yellow-400 mx-auto rounded-full"></div>
+                    <h3 class="text-2xl md:text-4xl font-black text-gray-800 mb-2">🥇 대상</h3>
+                    <div class="w-16 md:w-24 h-1 bg-yellow-400 mx-auto rounded-full"></div>
                 </div>
-                <div class="max-w-4xl mx-auto">
-                    <div class="winner-card award-card rounded-3xl p-10">
-                        <div class="text-center mb-8">
-                            <div class="text-7xl mb-4 sparkle">👑</div>
-                            <h4 class="text-3xl font-bold text-gray-800 mb-3">김민수</h4>
-                            <p class="text-gray-600 text-lg mb-4">010-****-1234</p>
-                            <div class="text-5xl font-black text-amber-600 mb-6">EduMind AI</div>
+                <div class="max-w-4xl mx-auto px-4">
+                    <div class="winner-card award-card rounded-3xl p-6 md:p-10">
+                        <div class="text-center mb-6 md:mb-8">
+                            <div class="text-5xl md:text-7xl mb-4 sparkle">👑</div>
+                            <h4 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3">김민수</h4>
+                            <p class="text-gray-600 text-base md:text-lg mb-4">010-****-1234</p>
+                            <div class="text-3xl md:text-5xl font-black text-amber-600 mb-6">EduMind AI</div>
                         </div>
-                        <div class="bg-white/70 rounded-2xl p-8 border-l-4 border-amber-500">
-                            <h5 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                                <span class="text-3xl mr-3">💡</span>브랜드 스토리
+                        <div class="bg-white/70 rounded-2xl p-4 md:p-8 border-l-4 border-amber-500">
+                            <h5 class="text-lg md:text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                                <span class="text-2xl md:text-3xl mr-3">💡</span>브랜드 스토리
                             </h5>
-                            <p class="text-gray-700 leading-relaxed text-lg">
+                            <p class="text-gray-700 leading-relaxed text-sm md:text-lg">
                                 'EduMind AI'는 Education(교육)과 Mind(마음, 지성)를 결합한 이름으로, 
                                 AI 기술이 단순히 정보를 전달하는 것을 넘어 학생들의 마음과 지성을 키워주는 
                                 진정한 교육 파트너가 되겠다는 의미를 담았습니다. 
@@ -306,27 +352,27 @@
             <!-- Excellence Awards -->
             <div class="mb-16 slide-up">
                 <div class="text-center mb-8">
-                    <h3 class="text-4xl font-black text-gray-800 mb-2">🥈 우수상</h3>
-                    <div class="w-24 h-1 bg-blue-400 mx-auto rounded-full"></div>
+                    <h3 class="text-2xl md:text-4xl font-black text-gray-800 mb-2">🥈 우수상</h3>
+                    <div class="w-16 md:w-24 h-1 bg-blue-400 mx-auto rounded-full"></div>
                 </div>
-                <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                    <div class="excellence-card award-card rounded-2xl p-8 text-center">
-                        <div class="text-5xl mb-4 sparkle">🌟</div>
-                        <h4 class="text-2xl font-bold text-gray-800 mb-2">이지영</h4>
-                        <p class="text-gray-600 mb-4">010-****-5678</p>
-                        <div class="text-3xl font-bold text-blue-600">SmartLearn+</div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto px-4">
+                    <div class="excellence-card award-card rounded-2xl p-6 md:p-8 text-center">
+                        <div class="text-4xl md:text-5xl mb-4 sparkle">🌟</div>
+                        <h4 class="text-xl md:text-2xl font-bold text-gray-800 mb-2">이지영</h4>
+                        <p class="text-gray-600 mb-4 text-sm md:text-base">010-****-5678</p>
+                        <div class="text-2xl md:text-3xl font-bold text-blue-600">SmartLearn+</div>
                     </div>
-                    <div class="excellence-card award-card rounded-2xl p-8 text-center">
-                        <div class="text-5xl mb-4 sparkle">🌟</div>
-                        <h4 class="text-2xl font-bold text-gray-800 mb-2">박준호</h4>
-                        <p class="text-gray-600 mb-4">010-****-9012</p>
-                        <div class="text-3xl font-bold text-green-600">EduGenius</div>
+                    <div class="excellence-card award-card rounded-2xl p-6 md:p-8 text-center">
+                        <div class="text-4xl md:text-5xl mb-4 sparkle">🌟</div>
+                        <h4 class="text-xl md:text-2xl font-bold text-gray-800 mb-2">박준호</h4>
+                        <p class="text-gray-600 mb-4 text-sm md:text-base">010-****-9012</p>
+                        <div class="text-2xl md:text-3xl font-bold text-green-600">EduGenius</div>
                     </div>
-                    <div class="excellence-card award-card rounded-2xl p-8 text-center">
-                        <div class="text-5xl mb-4 sparkle">🌟</div>
-                        <h4 class="text-2xl font-bold text-gray-800 mb-2">최서연</h4>
-                        <p class="text-gray-600 mb-4">010-****-3456</p>
-                        <div class="text-3xl font-bold text-orange-600">AIClass Pro</div>
+                    <div class="excellence-card award-card rounded-2xl p-6 md:p-8 text-center">
+                        <div class="text-4xl md:text-5xl mb-4 sparkle">🌟</div>
+                        <h4 class="text-xl md:text-2xl font-bold text-gray-800 mb-2">최서연</h4>
+                        <p class="text-gray-600 mb-4 text-sm md:text-base">010-****-3456</p>
+                        <div class="text-2xl md:text-3xl font-bold text-orange-600">AIClass Pro</div>
                     </div>
                 </div>
             </div>
@@ -334,177 +380,177 @@
             <!-- Participation Awards -->
             <div class="mb-16 slide-up">
                 <div class="text-center mb-8">
-                    <h3 class="text-4xl font-black text-gray-800 mb-2">🎁 참여상</h3>
-                    <div class="w-24 h-1 bg-green-400 mx-auto rounded-full"></div>
-                    <p class="text-white/80 text-lg mt-4">추첨을 통해 선정된 100명</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-gray-800 mb-2">🎁 참여상</h3>
+                    <div class="w-16 md:w-24 h-1 bg-green-400 mx-auto rounded-full"></div>
+                    <p class="text-gray-600 text-base md:text-lg mt-4">추첨을 통해 선정된 100명</p>
                 </div>
-                <div class="max-w-7xl mx-auto text-center mb-6">
-                    <button id="toggleParticipants" class="toggle-button bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg">
+                <div class="max-w-7xl mx-auto text-center mb-6 px-4">
+                    <button id="toggleParticipants" class="toggle-button bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold py-3 md:py-4 px-6 md:px-8 rounded-full text-sm md:text-lg shadow-lg">
                         <span id="toggleText">🔽 자세히 보기 (100명 전체 명단)</span>
                     </button>
                 </div>
                 <div id="participantsGrid" class="participants-grid">
-                    <div class="participation-grid rounded-3xl p-8 max-w-7xl mx-auto bg-gradient-to-br from-slate-700 via-gray-800 to-slate-900">
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 text-white">
-                            <div class="bg-white/10 rounded-lg p-3 text-center">강민지 (010-****-1234)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">김태현 (010-****-2345)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">이수빈 (010-****-3456)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">박지훈 (010-****-4567)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">최예린 (010-****-5678)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">정우진 (010-****-6789)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">한소영 (010-****-7890)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">윤도현 (010-****-8901)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">임채원 (010-****-9012)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">조민석 (010-****-0123)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">신유진 (010-****-1357)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">오준영 (010-****-2468)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">배서현 (010-****-3579)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">홍민우 (010-****-4680)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">서지은 (010-****-5791)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">노태준 (010-****-6802)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">문예나 (010-****-7913)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">황준서 (010-****-8024)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">송하린 (010-****-9135)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">구민혁 (010-****-0246)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">장서윤 (010-****-1358)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">안준호 (010-****-2469)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">유채영 (010-****-3570)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">전민수 (010-****-4681)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">권지우 (010-****-5792)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">남다은 (010-****-6803)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">도현우 (010-****-7914)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">류서진 (010-****-8025)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">마예린 (010-****-9136)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">변준영 (010-****-0247)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">사민지 (010-****-1359)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">아태현 (010-****-2460)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">자수빈 (010-****-3571)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">차지훈 (010-****-4682)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">카예린 (010-****-5793)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">타우진 (010-****-6804)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">파소영 (010-****-7915)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">하도현 (010-****-8026)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">강채원 (010-****-9137)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">김민석 (010-****-0248)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">이유진 (010-****-1360)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">박준영 (010-****-2461)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">최서현 (010-****-3572)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">정민우 (010-****-4683)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">한지은 (010-****-5794)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">윤태준 (010-****-6805)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">임예나 (010-****-7916)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">조준서 (010-****-8027)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">신하린 (010-****-9138)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">오민혁 (010-****-0249)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">배서윤 (010-****-1361)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">홍준호 (010-****-2462)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">서채영 (010-****-3573)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">노민수 (010-****-4684)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">문지우 (010-****-5795)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">황다은 (010-****-6806)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">송현우 (010-****-7917)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">구서진 (010-****-8028)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">장예린 (010-****-9139)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">안준영 (010-****-0250)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">유민지 (010-****-1362)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">전태현 (010-****-2463)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">권수빈 (010-****-3574)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">남지훈 (010-****-4685)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">도예린 (010-****-5796)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">류우진 (010-****-6807)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">마소영 (010-****-7918)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">변도현 (010-****-8029)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">사채원 (010-****-9140)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">아민석 (010-****-0251)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">자유진 (010-****-1363)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">차준영 (010-****-2464)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">카서현 (010-****-3575)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">타민우 (010-****-4686)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">파지은 (010-****-5797)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">하태준 (010-****-6808)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">강예나 (010-****-7919)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">김준서 (010-****-8030)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">이하린 (010-****-9141)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">박민혁 (010-****-0252)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">최서윤 (010-****-1364)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">정준호 (010-****-2465)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">한채영 (010-****-3576)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">윤민수 (010-****-4687)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">임지우 (010-****-5798)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">조다은 (010-****-6809)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">신현우 (010-****-7920)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">오서진 (010-****-8031)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">배예린 (010-****-9142)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">홍준영 (010-****-0253)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">서민지 (010-****-1365)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">노태현 (010-****-2466)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">문수빈 (010-****-3577)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">황지훈 (010-****-4688)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">송예린 (010-****-5799)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">구우진 (010-****-6810)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">장소영 (010-****-7921)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">안도현 (010-****-8032)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">유채원 (010-****-9143)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">전민석 (010-****-0254)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">권유진 (010-****-1366)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">남준영 (010-****-2467)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">도서현 (010-****-3578)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">류민우 (010-****-4689)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">마지은 (010-****-5800)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">변태준 (010-****-6811)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">사예나 (010-****-7922)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">아준서 (010-****-8033)</div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center">자하린 (010-****-9144)</div>
+                    <div class="participation-grid rounded-3xl p-4 md:p-8 max-w-7xl mx-auto bg-gradient-to-br from-slate-700 via-gray-800 to-slate-900">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-3 text-white">
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">강민지 (010-****-1234)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">김태현 (010-****-2345)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">이수빈 (010-****-3456)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">박지훈 (010-****-4567)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">최예린 (010-****-5678)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">정우진 (010-****-6789)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">한소영 (010-****-7890)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">윤도현 (010-****-8901)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">임채원 (010-****-9012)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">조민석 (010-****-0123)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">신유진 (010-****-1357)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">오준영 (010-****-2468)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">배서현 (010-****-3579)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">홍민우 (010-****-4680)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">서지은 (010-****-5791)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">노태준 (010-****-6802)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">문예나 (010-****-7913)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">황준서 (010-****-8024)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">송하린 (010-****-9135)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">구민혁 (010-****-0246)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">장서윤 (010-****-1358)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">안준호 (010-****-2469)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">유채영 (010-****-3570)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">전민수 (010-****-4681)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">권지우 (010-****-5792)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">남다은 (010-****-6803)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">도현우 (010-****-7914)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">류서진 (010-****-8025)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">마예린 (010-****-9136)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">변준영 (010-****-0247)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">사민지 (010-****-1359)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">아태현 (010-****-2460)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">자수빈 (010-****-3571)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">차지훈 (010-****-4682)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">카예린 (010-****-5793)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">타우진 (010-****-6804)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">파소영 (010-****-7915)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">하도현 (010-****-8026)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">강채원 (010-****-9137)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">김민석 (010-****-0248)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">이유진 (010-****-1360)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">박준영 (010-****-2461)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">최서현 (010-****-3572)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">정민우 (010-****-4683)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">한지은 (010-****-5794)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">윤태준 (010-****-6805)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">임예나 (010-****-7916)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">조준서 (010-****-8027)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">신하린 (010-****-9138)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">오민혁 (010-****-0249)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">배서윤 (010-****-1361)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">홍준호 (010-****-2462)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">서채영 (010-****-3573)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">노민수 (010-****-4684)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">문지우 (010-****-5795)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">황다은 (010-****-6806)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">송현우 (010-****-7917)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">구서진 (010-****-8028)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">장예린 (010-****-9139)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">안준영 (010-****-0250)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">유민지 (010-****-1362)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">전태현 (010-****-2463)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">권수빈 (010-****-3574)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">남지훈 (010-****-4685)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">도예린 (010-****-5796)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">류우진 (010-****-6807)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">마소영 (010-****-7918)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">변도현 (010-****-8029)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">사채원 (010-****-9140)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">아민석 (010-****-0251)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">자유진 (010-****-1363)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">차준영 (010-****-2464)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">카서현 (010-****-3575)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">타민우 (010-****-4686)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">파지은 (010-****-5797)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">하태준 (010-****-6808)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">강예나 (010-****-7919)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">김준서 (010-****-8030)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">이하린 (010-****-9141)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">박민혁 (010-****-0252)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">최서윤 (010-****-1364)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">정준호 (010-****-2465)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">한채영 (010-****-3576)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">윤민수 (010-****-4687)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">임지우 (010-****-5798)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">조다은 (010-****-6809)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">신현우 (010-****-7920)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">오서진 (010-****-8031)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">배예린 (010-****-9142)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">홍준영 (010-****-0253)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">서민지 (010-****-1365)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">노태현 (010-****-2466)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">문수빈 (010-****-3577)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">황지훈 (010-****-4688)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">송예린 (010-****-5799)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">구우진 (010-****-6810)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">장소영 (010-****-7921)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">안도현 (010-****-8032)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">유채원 (010-****-9143)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">전민석 (010-****-0254)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">권유진 (010-****-1366)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">남준영 (010-****-2467)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">도서현 (010-****-3578)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">류민우 (010-****-4689)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">마지은 (010-****-5800)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">변태준 (010-****-6811)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">사예나 (010-****-7922)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">아준서 (010-****-8033)</div>
+                            <div class="bg-white/10 rounded-lg p-2 md:p-3 text-center text-xs md:text-sm">자하린 (010-****-9144)</div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Event Information -->
-            <div class="mb-16 slide-up bg-gradient-to-br from-orange-100 via-amber-50 to-yellow-100 rounded-3xl p-8 mx-4">
-                <div class="award-card rounded-3xl p-10 max-w-5xl mx-auto text-center bg-white/80 backdrop-blur-sm">
-                    <h3 class="text-4xl font-black text-gray-800 mb-8 flex items-center justify-center">
-                        <span class="text-5xl mr-4">🎊</span>오프라인 시상식 안내
+            <div class="mb-16 slide-up bg-gradient-to-br from-orange-100 via-amber-50 to-yellow-100 rounded-3xl p-4 md:p-8 mx-2 md:mx-4">
+                <div class="award-card rounded-3xl p-6 md:p-10 max-w-5xl mx-auto text-center bg-white/80 backdrop-blur-sm">
+                    <h3 class="text-2xl md:text-4xl font-black text-gray-800 mb-6 md:mb-8 flex flex-col md:flex-row items-center justify-center">
+                        <span class="text-3xl md:text-5xl mb-2 md:mb-0 md:mr-4">🎊</span>오프라인 시상식 안내
                     </h3>
-                    <div class="space-y-6">
-                        <p class="text-xl text-gray-700">당선작 수상자께서는 개별 연락을 통해 오프라인 시상식에 초대해드립니다</p>
-                        <div class="bg-gradient-to-r from-purple-50 to-blue-50 rounded-2xl p-8 border-l-4 border-purple-500">
-                            <div class="text-3xl font-black text-purple-800 mb-3">📅 2024년 9월 18일 (수) 오전 11시</div>
-                            <div class="text-2xl font-bold text-blue-700 mb-6">📍 코엑스 A홀</div>
+                    <div class="space-y-4 md:space-y-6">
+                        <p class="text-sm md:text-xl text-gray-700">당선작 수상자께서는 개별 연락을 통해 오프라인 시상식에 초대해드립니다</p>
+                        <div class="bg-gradient-to-r from-purple-50 to-blue-50 rounded-2xl p-4 md:p-8 border-l-4 border-purple-500">
+                            <div class="text-xl md:text-3xl font-black text-purple-800 mb-3">📅 2024년 9월 18일 (수) 오전 11시</div>
+                            <div class="text-lg md:text-2xl font-bold text-blue-700 mb-4 md:mb-6">📍 코엑스 A홀</div>
                             
                             <!-- Map Section -->
-                            <div class="bg-white rounded-xl p-6 shadow-lg">
-                                <div class="flex flex-col lg:flex-row gap-6 items-center">
+                            <div class="bg-white rounded-xl p-3 md:p-6 shadow-lg">
+                                <div class="flex flex-col gap-4 md:gap-6">
                                     <!-- Kakao Map -->
-                                    <div class="flex-1 rounded-lg overflow-hidden border-2 border-blue-200">
-                                        <div id="map" class="w-full h-[300px] bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center">
+                                    <div class="rounded-lg overflow-hidden border-2 border-blue-200">
+                                        <div id="map" class="w-full h-[200px] md:h-[300px] bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center">
                                             <div class="text-center">
-                                                <div class="text-4xl mb-2">🗺️</div>
-                                                <div class="text-sm text-gray-600">지도를 불러오는 중...</div>
+                                                <div class="text-3xl md:text-4xl mb-2">🗺️</div>
+                                                <div class="text-xs md:text-sm text-gray-600">지도를 불러오는 중...</div>
                                             </div>
                                         </div>
                                     </div>
                                     
                                     <!-- Location Info -->
-                                    <div class="flex-1 space-y-4">
-                                        <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-4">
-                                            <h5 class="text-lg font-bold text-gray-800 mb-2 flex items-center">
-                                                <span class="text-2xl mr-2">📍</span>위치 정보
+                                    <div class="space-y-3 md:space-y-4">
+                                        <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-3 md:p-4">
+                                            <h5 class="text-sm md:text-lg font-bold text-gray-800 mb-2 flex items-center">
+                                                <span class="text-lg md:text-2xl mr-2">📍</span>위치 정보
                                             </h5>
-                                            <p class="text-gray-700 font-semibold">서울시 강남구 봉은사로</p>
-                                            <p class="text-blue-600 font-bold text-lg">코엑스 A홀</p>
+                                            <p class="text-xs md:text-base text-gray-700 font-semibold">서울시 강남구 봉은사로</p>
+                                            <p class="text-sm md:text-lg text-blue-600 font-bold">코엑스 A홀</p>
                                         </div>
                                         
-                                        <div class="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-lg p-4">
-                                            <h5 class="text-lg font-bold text-gray-800 mb-2 flex items-center">
-                                                <span class="text-2xl mr-2">🚇</span>교통 안내
+                                        <div class="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-lg p-3 md:p-4">
+                                            <h5 class="text-sm md:text-lg font-bold text-gray-800 mb-2 flex items-center">
+                                                <span class="text-lg md:text-2xl mr-2">🚇</span>교통 안내
                                             </h5>
-                                            <p class="text-gray-700">지하철 2호선 삼성역 5,6번 출구</p>
-                                            <p class="text-gray-700">지하철 9호선 봉은사역 7번 출구</p>
+                                            <p class="text-xs md:text-base text-gray-700">지하철 2호선 삼성역 5,6번 출구</p>
+                                            <p class="text-xs md:text-base text-gray-700">지하철 9호선 봉은사역 7번 출구</p>
                                         </div>
                                         
-                                        <div class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg p-4">
-                                            <p class="text-sm text-gray-600 italic">
+                                        <div class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg p-3 md:p-4">
+                                            <p class="text-xs md:text-sm text-gray-600 italic">
                                                 💡 시상식 참여자 분들께 개별 안내드릴 예정입니다.
                                             </p>
                                         </div>
@@ -517,45 +563,45 @@
             </div>
 
             <!-- AIDT Message -->
-            <div class="text-center mb-16 slide-up bg-gradient-to-br from-rose-100 via-pink-50 to-purple-100 rounded-3xl p-8 mx-4">
-                <div class="ceremony-header rounded-3xl p-10 max-w-5xl mx-auto bg-gradient-to-br from-purple-600 via-blue-600 to-indigo-700">
-                    <h4 class="text-3xl font-black text-white mb-8 flex items-center justify-center">
-                        <span class="text-4xl mr-4">💪</span>AIDT의 다짐
+            <div class="text-center mb-16 slide-up bg-gradient-to-br from-rose-100 via-pink-50 to-purple-100 rounded-3xl p-4 md:p-8 mx-2 md:mx-4">
+                <div class="ceremony-header rounded-3xl p-6 md:p-10 max-w-5xl mx-auto bg-gradient-to-br from-purple-600 via-blue-600 to-indigo-700">
+                    <h4 class="text-2xl md:text-3xl font-black text-white mb-6 md:mb-8 flex flex-col md:flex-row items-center justify-center">
+                        <span class="text-3xl md:text-4xl mb-2 md:mb-0 md:mr-4">💪</span>AIDT의 다짐
                     </h4>
-                    <div class="text-white text-xl leading-relaxed space-y-6">
-                        <p class="text-2xl font-semibold">
-                            AIDT는 이제 교육자료로 새롭게 자리하게 되었습니다.<br>
-                            형태는 달라졌지만, 선생님과 아이들의 배움 곁에는 언제나 AIDT가 함께할 것입니다.
+                    <div class="text-white text-sm md:text-xl leading-relaxed space-y-4 md:space-y-6">
+                        <p class="text-base md:text-2xl font-semibold">
+                            AIDT는 이제 교육자료로 새롭게 자리하게 되었습니다.<br class="hidden md:block">
+                            형태는 달라졌지만, 선생님과 아이들의 배움 곁에는<br class="md:hidden"> 언제나 AIDT가 함께할 것입니다.
                         </p>
                         
-                        <div class="bg-white/10 rounded-2xl p-8 backdrop-blur-sm border border-white/20">
-                            <h5 class="text-2xl font-bold text-yellow-300 mb-6">- 우리의 약속 -</h5>
-                            <div class="space-y-4 text-lg text-left max-w-3xl mx-auto">
+                        <div class="bg-white/10 rounded-2xl p-4 md:p-8 backdrop-blur-sm border border-white/20">
+                            <h5 class="text-lg md:text-2xl font-bold text-yellow-300 mb-4 md:mb-6">- 우리의 약속 -</h5>
+                            <div class="space-y-3 md:space-y-4 text-sm md:text-lg text-left max-w-3xl mx-auto">
                                 <p class="flex items-start">
-                                    <span class="text-yellow-300 mr-3 mt-1">✓</span>
+                                    <span class="text-yellow-300 mr-2 md:mr-3 mt-1">✓</span>
                                     선생님의 목소리를 더욱 깊이 담아내겠습니다.
                                 </p>
                                 <p class="flex items-start">
-                                    <span class="text-yellow-300 mr-3 mt-1">✓</span>
+                                    <span class="text-yellow-300 mr-2 md:mr-3 mt-1">✓</span>
                                     검증된 고품질 콘텐츠로 교육 혁신을 이끌어가겠습니다.
                                 </p>
                                 <p class="flex items-start">
-                                    <span class="text-yellow-300 mr-3 mt-1">✓</span>
+                                    <span class="text-yellow-300 mr-2 md:mr-3 mt-1">✓</span>
                                     모든 아이들이 존중받는 따뜻하고 공평한 배움을 지원하겠습니다.
                                 </p>
                                 <p class="flex items-start">
-                                    <span class="text-yellow-300 mr-3 mt-1">✓</span>
+                                    <span class="text-yellow-300 mr-2 md:mr-3 mt-1">✓</span>
                                     학교와 긴밀히 협력하여 교실 속 변화를 현실로 만들겠습니다.
                                 </p>
                             </div>
                         </div>
                         
-                        <p class="text-xl font-semibold text-yellow-200">
+                        <p class="text-sm md:text-xl font-semibold text-yellow-200">
                             선생님과 함께 내일의 교실을 만들어가며,<br>
                             배움의 희망을 끝까지 이어가겠습니다.
                         </p>
                         
-                        <p class="text-lg font-bold text-white/90 mt-8">
+                        <p class="text-sm md:text-lg font-bold text-white/90 mt-6 md:mt-8">
                             한국교과서협회 & AI 디지털교과서 발행사 일동
                         </p>
                     </div>
@@ -563,46 +609,46 @@
             </div>
 
             <!-- Publisher Logos Slider -->
-            <div class="mb-16 slide-up bg-gradient-to-br from-blue-100 via-indigo-50 to-purple-100 rounded-3xl p-8 mx-4">
-                <div class="text-center mb-8">
-                    <h3 class="text-3xl font-black text-gray-800 mb-4">🤝 AI 디지털교과서 발행사</h3>
-                    <div class="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto rounded-full"></div>
+            <div class="mb-16 slide-up bg-gradient-to-br from-blue-100 via-indigo-50 to-purple-100 rounded-3xl p-4 md:p-8 mx-2 md:mx-4">
+                <div class="text-center mb-6 md:mb-8">
+                    <h3 class="text-xl md:text-3xl font-black text-gray-800 mb-4">🤝 AI 디지털교과서 발행사</h3>
+                    <div class="w-16 md:w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto rounded-full"></div>
                 </div>
-                <div class="bg-white/30 backdrop-blur-sm rounded-2xl py-8 border border-white/40 space-y-6">
+                <div class="bg-white/30 backdrop-blur-sm rounded-2xl py-4 md:py-8 border border-white/40 space-y-4 md:space-y-6">
                     <!-- First Row - Slides Left -->
                     <div class="overflow-hidden">
-                        <div class="logos-slider flex items-center space-x-8">
-                            <div class="flex items-center space-x-8 animate-slide-left">
-                                <div class="bg-white rounded-xl p-4 shadow-lg min-w-[180px] h-20 flex items-center justify-center">
-                                    <span class="text-xl font-bold text-blue-600">천재교육</span>
+                        <div class="logos-slider flex items-center space-x-4 md:space-x-8">
+                            <div class="flex items-center space-x-4 md:space-x-8 animate-slide-left">
+                                <div class="bg-white rounded-xl p-2 md:p-4 shadow-lg min-w-[120px] md:min-w-[180px] h-12 md:h-20 flex items-center justify-center">
+                                    <span class="text-sm md:text-xl font-bold text-blue-600">천재교육</span>
                                 </div>
-                                <div class="bg-white rounded-xl p-4 shadow-lg min-w-[180px] h-20 flex items-center justify-center">
-                                    <span class="text-xl font-bold text-green-600">비상교육</span>
+                                <div class="bg-white rounded-xl p-2 md:p-4 shadow-lg min-w-[120px] md:min-w-[180px] h-12 md:h-20 flex items-center justify-center">
+                                    <span class="text-sm md:text-xl font-bold text-green-600">비상교육</span>
                                 </div>
-                                <div class="bg-white rounded-xl p-4 shadow-lg min-w-[180px] h-20 flex items-center justify-center">
-                                    <span class="text-xl font-bold text-purple-600">교학사</span>
+                                <div class="bg-white rounded-xl p-2 md:p-4 shadow-lg min-w-[120px] md:min-w-[180px] h-12 md:h-20 flex items-center justify-center">
+                                    <span class="text-sm md:text-xl font-bold text-purple-600">교학사</span>
                                 </div>
-                                <div class="bg-white rounded-xl p-4 shadow-lg min-w-[180px] h-20 flex items-center justify-center">
-                                    <span class="text-xl font-bold text-orange-600">금성출판사</span>
+                                <div class="bg-white rounded-xl p-2 md:p-4 shadow-lg min-w-[120px] md:min-w-[180px] h-12 md:h-20 flex items-center justify-center">
+                                    <span class="text-sm md:text-xl font-bold text-orange-600">금성출판사</span>
                                 </div>
-                                <div class="bg-white rounded-xl p-4 shadow-lg min-w-[180px] h-20 flex items-center justify-center">
-                                    <span class="text-xl font-bold text-red-600">동아출판</span>
+                                <div class="bg-white rounded-xl p-2 md:p-4 shadow-lg min-w-[120px] md:min-w-[180px] h-12 md:h-20 flex items-center justify-center">
+                                    <span class="text-sm md:text-xl font-bold text-red-600">동아출판</span>
                                 </div>
                                 <!-- Duplicate for seamless loop -->
-                                <div class="bg-white rounded-xl p-4 shadow-lg min-w-[180px] h-20 flex items-center justify-center">
-                                    <span class="text-xl font-bold text-blue-600">천재교육</span>
+                                <div class="bg-white rounded-xl p-2 md:p-4 shadow-lg min-w-[120px] md:min-w-[180px] h-12 md:h-20 flex items-center justify-center">
+                                    <span class="text-sm md:text-xl font-bold text-blue-600">천재교육</span>
                                 </div>
-                                <div class="bg-white rounded-xl p-4 shadow-lg min-w-[180px] h-20 flex items-center justify-center">
-                                    <span class="text-xl font-bold text-green-600">비상교육</span>
+                                <div class="bg-white rounded-xl p-2 md:p-4 shadow-lg min-w-[120px] md:min-w-[180px] h-12 md:h-20 flex items-center justify-center">
+                                    <span class="text-sm md:text-xl font-bold text-green-600">비상교육</span>
                                 </div>
-                                <div class="bg-white rounded-xl p-4 shadow-lg min-w-[180px] h-20 flex items-center justify-center">
-                                    <span class="text-xl font-bold text-purple-600">교학사</span>
+                                <div class="bg-white rounded-xl p-2 md:p-4 shadow-lg min-w-[120px] md:min-w-[180px] h-12 md:h-20 flex items-center justify-center">
+                                    <span class="text-sm md:text-xl font-bold text-purple-600">교학사</span>
                                 </div>
-                                <div class="bg-white rounded-xl p-4 shadow-lg min-w-[180px] h-20 flex items-center justify-center">
-                                    <span class="text-xl font-bold text-orange-600">금성출판사</span>
+                                <div class="bg-white rounded-xl p-2 md:p-4 shadow-lg min-w-[120px] md:min-w-[180px] h-12 md:h-20 flex items-center justify-center">
+                                    <span class="text-sm md:text-xl font-bold text-orange-600">금성출판사</span>
                                 </div>
-                                <div class="bg-white rounded-xl p-4 shadow-lg min-w-[180px] h-20 flex items-center justify-center">
-                                    <span class="text-xl font-bold text-red-600">동아출판</span>
+                                <div class="bg-white rounded-xl p-2 md:p-4 shadow-lg min-w-[120px] md:min-w-[180px] h-12 md:h-20 flex items-center justify-center">
+                                    <span class="text-sm md:text-xl font-bold text-red-600">동아출판</span>
                                 </div>
                             </div>
                         </div>
@@ -610,38 +656,38 @@
                     
                     <!-- Second Row - Slides Right -->
                     <div class="overflow-hidden">
-                        <div class="logos-slider flex items-center space-x-8">
-                            <div class="flex items-center space-x-8 animate-slide-right">
-                                <div class="bg-white rounded-xl p-4 shadow-lg min-w-[180px] h-20 flex items-center justify-center">
-                                    <span class="text-xl font-bold text-indigo-600">미래엔</span>
+                        <div class="logos-slider flex items-center space-x-4 md:space-x-8">
+                            <div class="flex items-center space-x-4 md:space-x-8 animate-slide-right">
+                                <div class="bg-white rounded-xl p-2 md:p-4 shadow-lg min-w-[120px] md:min-w-[180px] h-12 md:h-20 flex items-center justify-center">
+                                    <span class="text-sm md:text-xl font-bold text-indigo-600">미래엔</span>
                                 </div>
-                                <div class="bg-white rounded-xl p-4 shadow-lg min-w-[180px] h-20 flex items-center justify-center">
-                                    <span class="text-xl font-bold text-teal-600">지학사</span>
+                                <div class="bg-white rounded-xl p-2 md:p-4 shadow-lg min-w-[120px] md:min-w-[180px] h-12 md:h-20 flex items-center justify-center">
+                                    <span class="text-sm md:text-xl font-bold text-teal-600">지학사</span>
                                 </div>
-                                <div class="bg-white rounded-xl p-4 shadow-lg min-w-[180px] h-20 flex items-center justify-center">
-                                    <span class="text-xl font-bold text-pink-600">YBM</span>
+                                <div class="bg-white rounded-xl p-2 md:p-4 shadow-lg min-w-[120px] md:min-w-[180px] h-12 md:h-20 flex items-center justify-center">
+                                    <span class="text-sm md:text-xl font-bold text-pink-600">YBM</span>
                                 </div>
-                                <div class="bg-white rounded-xl p-4 shadow-lg min-w-[180px] h-20 flex items-center justify-center">
-                                    <span class="text-xl font-bold text-cyan-600">와이비엠</span>
+                                <div class="bg-white rounded-xl p-2 md:p-4 shadow-lg min-w-[120px] md:min-w-[180px] h-12 md:h-20 flex items-center justify-center">
+                                    <span class="text-sm md:text-xl font-bold text-cyan-600">와이비엠</span>
                                 </div>
-                                <div class="bg-white rounded-xl p-4 shadow-lg min-w-[180px] h-20 flex items-center justify-center">
-                                    <span class="text-xl font-bold text-emerald-600">대교</span>
+                                <div class="bg-white rounded-xl p-2 md:p-4 shadow-lg min-w-[120px] md:min-w-[180px] h-12 md:h-20 flex items-center justify-center">
+                                    <span class="text-sm md:text-xl font-bold text-emerald-600">대교</span>
                                 </div>
                                 <!-- Duplicate for seamless loop -->
-                                <div class="bg-white rounded-xl p-4 shadow-lg min-w-[180px] h-20 flex items-center justify-center">
-                                    <span class="text-xl font-bold text-indigo-600">미래엔</span>
+                                <div class="bg-white rounded-xl p-2 md:p-4 shadow-lg min-w-[120px] md:min-w-[180px] h-12 md:h-20 flex items-center justify-center">
+                                    <span class="text-sm md:text-xl font-bold text-indigo-600">미래엔</span>
                                 </div>
-                                <div class="bg-white rounded-xl p-4 shadow-lg min-w-[180px] h-20 flex items-center justify-center">
-                                    <span class="text-xl font-bold text-teal-600">지학사</span>
+                                <div class="bg-white rounded-xl p-2 md:p-4 shadow-lg min-w-[120px] md:min-w-[180px] h-12 md:h-20 flex items-center justify-center">
+                                    <span class="text-sm md:text-xl font-bold text-teal-600">지학사</span>
                                 </div>
-                                <div class="bg-white rounded-xl p-4 shadow-lg min-w-[180px] h-20 flex items-center justify-center">
-                                    <span class="text-xl font-bold text-pink-600">YBM</span>
+                                <div class="bg-white rounded-xl p-2 md:p-4 shadow-lg min-w-[120px] md:min-w-[180px] h-12 md:h-20 flex items-center justify-center">
+                                    <span class="text-sm md:text-xl font-bold text-pink-600">YBM</span>
                                 </div>
-                                <div class="bg-white rounded-xl p-4 shadow-lg min-w-[180px] h-20 flex items-center justify-center">
-                                    <span class="text-xl font-bold text-cyan-600">와이비엠</span>
+                                <div class="bg-white rounded-xl p-2 md:p-4 shadow-lg min-w-[120px] md:min-w-[180px] h-12 md:h-20 flex items-center justify-center">
+                                    <span class="text-sm md:text-xl font-bold text-cyan-600">와이비엠</span>
                                 </div>
-                                <div class="bg-white rounded-xl p-4 shadow-lg min-w-[180px] h-20 flex items-center justify-center">
-                                    <span class="text-xl font-bold text-emerald-600">대교</span>
+                                <div class="bg-white rounded-xl p-2 md:p-4 shadow-lg min-w-[120px] md:min-w-[180px] h-12 md:h-20 flex items-center justify-center">
+                                    <span class="text-sm md:text-xl font-bold text-emerald-600">대교</span>
                                 </div>
                             </div>
                         </div>
@@ -650,51 +696,51 @@
             </div>
 
             <!-- AIDT Link -->
-            <div class="text-center mb-16 slide-up">
-                <button onclick="window.open('#', '_blank')" class="bg-gradient-to-r from-purple-600 via-blue-600 to-indigo-600 hover:from-purple-700 hover:via-blue-700 hover:to-indigo-700 text-white font-bold py-6 px-12 rounded-full text-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl">
+            <div class="text-center mb-16 slide-up px-4">
+                <button onclick="window.open('#', '_blank')" class="bg-gradient-to-r from-purple-600 via-blue-600 to-indigo-600 hover:from-purple-700 hover:via-blue-700 hover:to-indigo-700 text-white font-bold py-4 md:py-6 px-8 md:px-12 rounded-full text-lg md:text-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl">
                     🌐 AIDT 웹전시관 바로가기
                 </button>
             </div>
 
             <!-- Contest Terms -->
-            <div class="mb-16 slide-up bg-gradient-to-br from-gray-100 via-slate-50 to-zinc-100 rounded-3xl p-8 mx-4">
+            <div class="mb-16 slide-up bg-gradient-to-br from-gray-100 via-slate-50 to-zinc-100 rounded-3xl p-4 md:p-8 mx-2 md:mx-4">
                 <div class="max-w-5xl mx-auto">
-                    <div class="bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray/20 shadow-lg">
-                        <h3 class="text-3xl font-black text-gray-800 mb-8 text-center flex items-center justify-center">
-                            <span class="text-4xl mr-4">📋</span>공모전 유의사항
+                    <div class="bg-white/80 backdrop-blur-sm rounded-3xl p-4 md:p-8 border border-gray/20 shadow-lg">
+                        <h3 class="text-xl md:text-3xl font-black text-gray-800 mb-6 md:mb-8 text-center flex flex-col md:flex-row items-center justify-center">
+                            <span class="text-2xl md:text-4xl mb-2 md:mb-0 md:mr-4">📋</span>공모전 유의사항
                         </h3>
-                        <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200">
-                            <div class="space-y-4 text-gray-700 text-lg">
+                        <div class="bg-gray-50 rounded-2xl p-4 md:p-6 border border-gray-200">
+                            <div class="space-y-3 md:space-y-4 text-gray-700 text-sm md:text-lg">
                                 <div class="flex items-start">
-                                    <span class="text-blue-500 mr-3 mt-1 text-xl">•</span>
+                                    <span class="text-blue-500 mr-2 md:mr-3 mt-1 text-lg md:text-xl">•</span>
                                     <p>모든 출품작은 순수 창작물이어야 하며 상표권 등록이 가능해야 합니다.</p>
                                 </div>
                                 <div class="flex items-start">
-                                    <span class="text-blue-500 mr-3 mt-1 text-xl">•</span>
+                                    <span class="text-blue-500 mr-2 md:mr-3 mt-1 text-lg md:text-xl">•</span>
                                     <p>수상작에 대한 지적재산권 일체와 상표권은 공모전 주최 측에 귀속됩니다.</p>
                                 </div>
                                 <div class="flex items-start">
-                                    <span class="text-blue-500 mr-3 mt-1 text-xl">•</span>
+                                    <span class="text-blue-500 mr-2 md:mr-3 mt-1 text-lg md:text-xl">•</span>
                                     <p>수상에 따른 제세공과금(22%)은 수상자 본인 부담입니다.</p>
                                 </div>
                                 <div class="flex items-start">
-                                    <span class="text-blue-500 mr-3 mt-1 text-xl">•</span>
+                                    <span class="text-blue-500 mr-2 md:mr-3 mt-1 text-lg md:text-xl">•</span>
                                     <p>최종 선정작은 관계자 및 전문가 심의를 거쳐 수정·보완될 수 있으며, 반드시 최종 브랜드명으로 사용되는 것은 아닙니다.</p>
                                 </div>
                                 <div class="flex items-start">
-                                    <span class="text-blue-500 mr-3 mt-1 text-xl">•</span>
+                                    <span class="text-blue-500 mr-2 md:mr-3 mt-1 text-lg md:text-xl">•</span>
                                     <p>다른 공모전 수상작·타인의 저작물 도용 시 심사 제외 및 수상 취소됩니다.</p>
                                 </div>
                                 <div class="flex items-start">
-                                    <span class="text-blue-500 mr-3 mt-1 text-xl">•</span>
+                                    <span class="text-blue-500 mr-2 md:mr-3 mt-1 text-lg md:text-xl">•</span>
                                     <p>응모작은 반환되지 않으며, 필요 시 주최 측에서 수정·보완하여 활용할 수 있습니다.</p>
                                 </div>
                                 <div class="flex items-start">
-                                    <span class="text-blue-500 mr-3 mt-1 text-xl">•</span>
+                                    <span class="text-blue-500 mr-2 md:mr-3 mt-1 text-lg md:text-xl">•</span>
                                     <p>1인 다수 응모는 가능하나, 중복 수상은 불가합니다.</p>
                                 </div>
                                 <div class="flex items-start">
-                                    <span class="text-blue-500 mr-3 mt-1 text-xl">•</span>
+                                    <span class="text-blue-500 mr-2 md:mr-3 mt-1 text-lg md:text-xl">•</span>
                                     <p>응모 시 제출하신 개인정보는 공모전 운영 목적 외에는 사용되지 않으며, 목적 달성 후 즉시 폐기됩니다.</p>
                                 </div>
                             </div>
@@ -708,25 +754,25 @@
         
         <!-- Professional Footer -->
         <footer class="bg-gray-900/95 backdrop-blur-sm border-t border-white/10 mt-16">
-            <div class="container mx-auto px-4 py-12">
-                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div class="container mx-auto px-4 py-8 md:py-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
                     <!-- Organizer Info -->
                     <div class="text-center md:text-left">
-                        <h5 class="text-xl font-bold text-white mb-4">📋 주최</h5>
-                        <div class="space-y-2">
-                            <p class="text-gray-300 text-lg">한국교과서협회</p>
+                        <h5 class="text-lg md:text-xl font-bold text-white mb-3 md:mb-4">📋 주최</h5>
+                        <div class="space-y-1 md:space-y-2">
+                            <p class="text-gray-300 text-base md:text-lg">한국교과서협회</p>
                             <p class="text-gray-400">&</p>
-                            <p class="text-gray-300 text-lg">AI 디지털교과서 발행사</p>
+                            <p class="text-gray-300 text-base md:text-lg">AI 디지털교과서 발행사</p>
                         </div>
                     </div>
                     
                     <!-- Contact Info -->
                     <div class="text-center md:text-right">
-                        <h5 class="text-xl font-bold text-white mb-4">📞 문의</h5>
-                        <div class="space-y-2">
-                            <p class="text-gray-300 text-lg font-semibold">AI 디지털교과서 공동CS센터</p>
-                            <p class="text-yellow-400 text-xl font-bold">1666-0777</p>
-                            <div class="text-gray-400 text-sm space-y-1">
+                        <h5 class="text-lg md:text-xl font-bold text-white mb-3 md:mb-4">📞 문의</h5>
+                        <div class="space-y-1 md:space-y-2">
+                            <p class="text-gray-300 text-base md:text-lg font-semibold">AI 디지털교과서 공동CS센터</p>
+                            <p class="text-yellow-400 text-lg md:text-xl font-bold">1666-0777</p>
+                            <div class="text-gray-400 text-xs md:text-sm space-y-1">
                                 <p>월~금 09:00~18:00</p>
                                 <p>점심시간 12:00~13:00 제외</p>
                                 <p>토/일/공휴일 휴무</p>
@@ -736,8 +782,8 @@
                 </div>
                 
                 <!-- Copyright -->
-                <div class="border-t border-gray-700 mt-8 pt-6 text-center">
-                    <p class="text-gray-500 text-sm">© 2024 한국교과서협회 & AI 디지털교과서 발행사. All rights reserved.</p>
+                <div class="border-t border-gray-700 mt-6 md:mt-8 pt-4 md:pt-6 text-center">
+                    <p class="text-gray-500 text-xs md:text-sm">© 2024 한국교과서협회 & AI 디지털교과서 발행사. All rights reserved.</p>
                 </div>
             </div>
         </footer>
@@ -906,5 +952,5 @@
             setTimeout(initMap, 1000); // 1초 후 지도 초기화
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97c4e7b7c1f2aa4e',t:'MTc1NzQwMjIzOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97c5021b373baa4e',t:'MTc1NzQwMzMyMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
